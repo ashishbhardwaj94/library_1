@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-header">
+        Login to continue
+      </div>
+      <div class="card-body">
+<form [formGroup]="adminForm">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input class="form-control" name="username" id="username" type="text" formControlName="username"> 
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input class="form-control" name="password" id="password" type="password" formControlName="password">
+  </div>
+
+  <button type="submit" class="btn btn-success" [disabled]="!adminForm.valid" (click)='validateAdmin()'>Login</button>
+</form>
+</div>
+</div>
